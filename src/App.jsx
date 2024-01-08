@@ -2,6 +2,8 @@ import "./App.scss"
 import Navbar from "./components/navbar/Navbar"
 import Hero from "./components/hero/hero";
 import Parallax from "./components/parallax/Parallax";
+import Skills from "./components/skills/Skills";
+import Services from "./components/services/Services";
 const App = () => {
   return(<div>
         <section id="Homepage">
@@ -10,12 +12,16 @@ const App = () => {
         </section>
         <section id="Skills">
           <Parallax text="What We Know?"  type=" javascript, react.js Node.js express.js Mongodb java Mysql"/>
+        </section> 
+        <section>
+        <Skills/>
         </section>
-        <section id="Contact">skills</section> 
         <section id="services">
           <Parallax text="What We Do?"  type="web development ,Graphic Design Design Thinking"/>
-          </section>
-          <section id="Contact">services</section> 
+        </section>
+       <section> 
+        <Services/>
+        </section> 
         <section id="Projects"> 
         <Parallax text="What We Did?" type=" manager blog portfolio  shopping Cart "/>
         </section> 
