@@ -1,0 +1,61 @@
+@import "../../App.scss";
+
+.parallex{
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background-color: #073763;
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; // Center horizontally
+
+    .textContainer {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+
+      h1 {
+        font-size: 88px;
+        text-align: center; // Center text horizontally
+      }
+
+      .buttons {
+        button {
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          margin-right: 20px;
+          font-weight: 300;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    color: #ffffff09;
+    width: 50%;
+    white-space: nowrap;
+    font-weight: bold;
+    top: 50%; // Center vertically
+    left: 50%; // Center horizontally
+    transform: translate(-50%, -50%); // Adjust to center both horizontally and vertically
+   
+  }
+}
