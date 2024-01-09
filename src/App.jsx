@@ -12,25 +12,25 @@ const App = () => {
           <Navbar/>
           <Hero/>
         </section>
-        <section id="Skills">
+        <section >
           <Parallax text="What We Know?"  type=" javascript, react.js Node.js express.js Mongodb java Mysql"/>
         </section> 
-        <section>
+        <section id="Skills">
         <Skills/>
         </section>
-        <section id="services">
+        <section >
           <Parallax text="What We Do?"  type="web development ,Graphic Design Design Thinking"/>
         </section>
-       <section> 
+       <section id="Services"> 
         <Services/>
         </section> 
-        <section id="Projects"> 
+        <section > 
         <Parallax text="What We Did?" type=" manager blog portfolio  shopping Cart "/>
-        </section> 
-       <Projects/> 
-      <section id="Resume">
-          <Contact/>
-      </section>  
+        </section>
+        <Projects/>  
+         <section id="Contact">
+         <Contact/>
+        </section>  
   </div>);
 };
 

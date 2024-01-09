@@ -13,7 +13,6 @@ function Navbar() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          ibtissam
         </motion.span>
         <div className="social">
           <a href="https://www.linkedin.com/in/ibtissam-ech-chaibi-57bb9b246/">

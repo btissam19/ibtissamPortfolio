@@ -1,23 +1,47 @@
-.Navbar{
-    height: 100px;
-    .wrapper{
-        max-width: 1366px;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
+@import "../../App.scss";
+
+.Navbar {
+  height: 100px;
+
+  .wrapper {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
     }
-    span{
-        margin-left: 5px;
-        font-weight: bold;
+  }
+
+  span {
+    margin-left: 5px;
+    font-weight: bold;
+
+    @include mobile {
+      display: none;
     }
-    .social{
-        display: flex;
-        gap: 20px;
-        img{
-            width: 18px;
-            height: 18px;
-        }
+  }
+  .social {
+    display: flex;
+    gap: 20px;
+  
+    @include mobile {
+      flex-direction: row-reverse;
+      margin-left: auto; // This will move the social icons to the right
     }
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+
+    @include mobile {
+      margin-top: 10px; // Add spacing between social icons in mobile view
+    }
+  }
 }

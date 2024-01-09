@@ -41,7 +41,7 @@ const Skills = () => {
         id: 3,
         category: "Tools",
         skill: ["Git", "Docker", "Figma", "UML", "Postman", "VS Code"],
-        images:['/git.png','/docker.png','/figma.png','/uml.png','/postman.png','/vscode.jpg']
+        images:['/git.png','/docker.png','/figma.jpg','/uml.png','/postman.png','/vscode.jpg']
     },
     {
         id: 4,
