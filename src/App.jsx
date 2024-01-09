@@ -4,6 +4,8 @@ import Hero from "./components/hero/hero";
 import Parallax from "./components/parallax/Parallax";
 import Skills from "./components/skills/Skills";
 import Services from "./components/services/Services";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 const App = () => {
   return(<div>
         <section id="Homepage">
@@ -25,8 +27,10 @@ const App = () => {
         <section id="Projects"> 
         <Parallax text="What We Did?" type=" manager blog portfolio  shopping Cart "/>
         </section> 
-        <section id="Contact">project</section>  
-        <section id="Resume">Contact</section>  
+       <Projects/> 
+      <section id="Resume">
+          <Contact/>
+      </section>  
   </div>);
 };
 
