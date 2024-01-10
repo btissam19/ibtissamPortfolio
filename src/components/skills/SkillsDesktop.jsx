@@ -89,7 +89,6 @@ const Skills = () => {
              className="boxskills"
              whileHover={{ background: "pink", color: "#073763" }}
            >
-            {/* { background: "#ef8ba2", color: "#073763" } */}
    
              <h2>{item.category}</h2>
              <li>

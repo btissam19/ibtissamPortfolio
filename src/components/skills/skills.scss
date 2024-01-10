@@ -1,5 +1,5 @@
 @import "../../App.scss";
-
+@import 'bootstrap/dist/css/bootstrap.min.css';
 .skills {
   background: linear-gradient(180deg, #073763, #065aaa);
   height: 100%;
@@ -97,10 +97,10 @@
     display: flex;
     max-width: 1366px;
     margin-left: 100px;
-    @include mobile {
-      flex-direction: column;
-      width: 100%;
-    }
+    // @include mobile {
+    //   flex-direction: column;
+    //   width: 100%;
+    // }
   
     .boxskills{
       padding: 50px;
@@ -111,10 +111,10 @@
       justify-content: space-between;
       gap: 10px; 
       margin-top: 0;
-      @include mobile {
-        padding: 20px; // Adjust padding for better spacing in mobile view
-        margin: 0; // Remove margin in mobile view
-      }
+      // @include mobile {
+      //   padding: 20px; // Adjust padding for better spacing in mobile view
+      //   margin: 0; // Remove margin in mobile view
+      // }
   
       h2 {
         color: #ef8ba2;

@@ -2,12 +2,31 @@ import "./App.scss"
 import Navbar from "./components/navbar/Navbar"
 import Hero from "./components/hero/hero";
 import Parallax from "./components/parallax/Parallax";
-import Skills from "./components/skills/Skills";
+import Skills from "./components/skills/SkillsDesktop";
+import SkillsMobile from "./components/skills/skillsMobile";
 import Services from "./components/services/Services";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+import { useState , useEffect } from "react";
+import ProjectMobile from "./components/projects/ProjectMobile";
+import ContactMobil from "./components/contact/ContactMobil";
 const App = () => {
-  return(<div>
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  return(
+  <div>
         <section id="Homepage">
           <Navbar/>
           <Hero/>
@@ -16,20 +35,20 @@ const App = () => {
           <Parallax text="What We Know?"  type=" javascript, react.js Node.js express.js Mongodb java Mysql"/>
         </section> 
         <section id="Skills">
-        <Skills/>
+        {isMobile?<SkillsMobile/>:<Skills/>}
         </section>
         <section >
           <Parallax text="What We Do?"  type="web development ,Graphic Design Design Thinking"/>
         </section>
        <section id="Services"> 
-        <Services/>
-        </section> 
+           {isMobile?<SkillsMobile/>:<Services/>}  
+      </section> 
         <section > 
         <Parallax text="What We Did?" type=" manager blog portfolio  shopping Cart "/>
         </section>
-        <Projects/>  
+        {isMobile?<ProjectMobile/>:<Projects/>}   
          <section id="Contact">
-         <Contact/>
+        {isMobile ?<ContactMobil/>: <Contact/>}
         </section>  
   </div>);
 };

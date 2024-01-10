@@ -25,6 +25,10 @@
       h1 {
         font-size: 88px;
         text-align: center; // Center text horizontally
+        @include mobile {
+          font-size: 72px;
+          text-align: center;
+        }
       }
 
       .buttons {
