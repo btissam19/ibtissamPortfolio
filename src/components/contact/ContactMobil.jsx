@@ -23,12 +23,8 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
-
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_qjqbocx",
@@ -38,16 +34,13 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setSuccess(true);
           toast.success("Email sent successfully!");
         },
         (error) => {
-          setError(true);
           toast.error("Error sending email. Please try again.");
         }
       );
   };
-
   return (
     <motion.div
       ref={ref}

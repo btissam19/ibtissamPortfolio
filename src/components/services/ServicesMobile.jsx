@@ -1,7 +1,5 @@
-import React from 'react';
 import { useRef } from 'react';
 import './servicesMobile.scss'
-
 const ServicesMobile = () => {
   const ref = useRef();
   const services = [

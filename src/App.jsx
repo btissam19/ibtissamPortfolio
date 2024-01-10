@@ -1,3 +1,4 @@
+import { useState , useEffect } from "react";
 import "./App.scss"
 import Navbar from "./components/navbar/Navbar"
 import Hero from "./components/hero/hero";
@@ -8,20 +9,14 @@ import ServicesMobile from "./components/services/ServicesMobile";
 import Services from "./components/services/Services";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import { useState , useEffect } from "react";
-import ProjectMobile from "./components/projects/ProjectMobile";
 import ContactMobil from "./components/contact/ContactMobil";
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-
     window.addEventListener('resize', handleResize);
-
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };

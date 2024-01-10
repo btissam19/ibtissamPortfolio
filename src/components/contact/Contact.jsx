@@ -1,10 +1,9 @@
-import { useRef, useState } from "react";
+import { useRef} from "react";
 import emailjs from '@emailjs/browser';
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 const variants = {
   initial: {
     y: 500,
@@ -22,13 +21,9 @@ const variants = {
 
 const Contact = () => {
   const ref = useRef();
-  const formRef = useRef();
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
-
+  const formRef = useRef()
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_qjqbocx",
@@ -38,11 +33,9 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setSuccess(true);
           toast.success("Email sent successfully!");
         },
         (error) => {
-          setError(true);
           toast.error("Error sending email. Please try again.");
         }
       );

@@ -1,7 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import './hero.scss';
-
 function Hero() {
   const textVariants = {
     initial: {
@@ -73,7 +71,7 @@ function Hero() {
         initial="initial"
         animate="animate"
       >
-        web DevOps Cloud ML AI
+        web Devops Cloud ML AI
       </motion.div>
       <div className="imageContainer">
         <img src="/ibtissam.jpg" alt="" />
