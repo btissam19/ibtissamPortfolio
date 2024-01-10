@@ -78,7 +78,7 @@ const Skills = () => {
           <h1>
             <motion.b whileHover={{color:"#ef8ba2"}}> Technologies </motion.b> in IT.
           </h1>
-          <button>WHAT WE Know?</button>
+          <button>What We Know?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>

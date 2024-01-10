@@ -32,7 +32,7 @@
       }
 
       .buttons {
-        button {
+        a {
           padding: 20px;
           border: 1px solid white;
           border-radius: 10px;
@@ -57,9 +57,9 @@
     width: 50%;
     white-space: nowrap;
     font-weight: bold;
-    top: 50%; // Center vertically
-    left: 50%; // Center horizontally
-    transform: translate(-50%, -50%); // Adjust to center both horizontally and vertically
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
    
   }
 }

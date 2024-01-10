@@ -41,7 +41,6 @@ const Skills = () => {
         </div>
         <div className="title">
           <h1> Technologies in IT.</h1>
-          <button>WHAT WE Know?</button>
         </div>
       </div>
       <div className="container">

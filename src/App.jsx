@@ -4,6 +4,7 @@ import Hero from "./components/hero/hero";
 import Parallax from "./components/parallax/Parallax";
 import Skills from "./components/skills/SkillsDesktop";
 import SkillsMobile from "./components/skills/skillsMobile";
+import ServicesMobile from "./components/services/ServicesMobile";
 import Services from "./components/services/Services";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
@@ -32,21 +33,21 @@ const App = () => {
           <Hero/>
         </section>
         <section >
-          <Parallax text="What We Know?"  type=" javascript, react.js Node.js express.js Mongodb java Mysql"/>
+          <Parallax text="What We Know?"  type=" javascript, react.js Node.js express.js Mongodb java Mysql" link="Skills"/>
         </section> 
         <section id="Skills">
         {isMobile?<SkillsMobile/>:<Skills/>}
         </section>
         <section >
-          <Parallax text="What We Do?"  type="web development ,Graphic Design Design Thinking"/>
+          <Parallax text="What We Do?"  type="web development ,Graphic Design Design Thinking" link="Services"/>
         </section>
        <section id="Services"> 
-           {isMobile?<SkillsMobile/>:<Services/>}  
+           {isMobile?<ServicesMobile/>:<Services/>}  
       </section> 
         <section > 
-        <Parallax text="What We Did?" type=" manager blog portfolio  shopping Cart "/>
+        <Parallax text="What We Did?" type=" manager blog portfolio quiz " link="Projects"/>
         </section>
-        {isMobile?<ProjectMobile/>:<Projects/>}   
+         <Projects/>   
          <section id="Contact">
         {isMobile ?<ContactMobil/>: <Contact/>}
         </section>  
