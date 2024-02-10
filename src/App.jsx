@@ -8,6 +8,7 @@ import SkillsMobile from "./components/skills/skillsMobile";
 import ServicesMobile from "./components/services/ServicesMobile";
 import Services from "./components/services/Services";
 import Projects from "./components/projects/Projects";
+import Certification from "./components/certifications/Certification";
 import Contact from "./components/contact/Contact";
 import ContactMobil from "./components/contact/ContactMobil";
 const App = () => {
@@ -42,7 +43,11 @@ const App = () => {
         <section > 
         <Parallax text="What We Did?" type=" manager blog portfolio quiz " link="Projects"/>
         </section>
-         <Projects/>   
+         <Projects/> 
+         <section > 
+        <Parallax text="I am certified in!" type=" react cloud node.js " link="certifications"/>
+        </section>
+         <Certification />   
          <section id="Contact">
         {isMobile ?<ContactMobil/>: <Contact/>}
         </section>  

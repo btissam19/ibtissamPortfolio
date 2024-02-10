@@ -6,38 +6,37 @@ const items = [
   {
     id: 1,
     title: "Project Manager",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc:"It's a project where I leverage Node.js and Express.js frameworks along with MongoDB for the backend. For the frontend, I use Handlebars and vanilla JavaScript to create a web application with an admin panel. In this app, the admin assigns projects to each user, and users can view and manage their assigned projects. There's also a daily task manager with CRUD functionality for users, along with a messaging feature allowing users to communicate with the admin"
+    img: "/projectmanager.png",
+    desc:"The project utilizes Node.js and Express.js frameworks for the backend, incorporating MongoDB for data storage. For the frontend, Handlebars and vanilla JavaScript are employed to craft a user-friendly web application alongside an admin panel. Admins assign projects to users who can efficiently manage their tasks. Additionally, a daily task manager with CRUD functionality is implemented for users. To facilitate communication, a messaging feature connects users with the admin. Leveraging Git for version control, changes are tracked, and the project is deployed on Render as a SaaS solution. MongoDB Atlas is chosen as the cloud platform for database management, ensuring scalability and reliability.",
+    links:["https://projectmanager-cj90.onrender.com/",'https://github.com/btissam19/projectManager']
   },
   {
     id: 2,
     title: "Quiz App",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "It's a fundamental quiz app built with React, featuring basic questions. The application utilizes React Redux Toolkit for state management and Toast for notifications. The core principles include leveraging Redux for handling next and previous functionality and utilizing useContext to display the username for the player."
+    img: "/quizapp.png",
+    desc: "It's a fundamental quiz app built with React, featuring basic questions. The application utilizes React Redux Toolkit for state management and Toast for notifications. The core principles include leveraging Redux for handling next and previous functionality and utilizing useContext to display the username for the player.",
+    links:['https://quiz-app-10-react-question.netlify.app/','https://github.com/btissam19/react-quiz-application']
   },
   {
     id: 3,
-    title: "Engeneering website ",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "This is a representative website for our Ensem Engineering Club. I created it using the Bootstrap framework, along with CSS and HTML, to showcase the club online. The website provides information about our club's activities, achievements"
+    title: "Workshop ",
+    img: "/workshop.png",
+    desc:  "The website represents the next-gen in data engineering, DevOps, and DataOps events organized by a research laboratory using Bootstrap framework  and JavaScript.",
+    links:['https://dataops-devops-workshop.netlify.app/','https://github.com/btissam19/devops-dataops-workshop']
   },
   {
     id: 4,
     title: "My portfolio ",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "This is my portfolio website, crafted to showcase my skills, services, and personal identity and projects . Developed using React.js with native CSS for design, it incorporates engaging animations through Framer Motion."
+    img: "/portfolio.png",
+    desc: "This is my portfolio website, crafted to showcase my skills, services, and personal identity and projects . Developed using React.js with native CSS for design, it incorporates engaging animations through Framer Motion.",
+    links:['/','https://github.com/btissam19/ibtissamPortfolio']
   },
   {
     id: 5,
-    title: "Blog webite  ",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "This is a MERN stack application designed for sharing IT blogs and news. Built with React.js for the frontend, Node.js and Express.js for the backend, and MongoDB for the database, the platform offers a seamless experience for users to explore and contribute to the latest happenings in the IT world."
-  },
-  {
-    id: 6,
-    title: "E-learning website ",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "This is a full-stack application featuring Java Spring for the backend and React for the frontend, serving as a compact e-learning platform. With a blend of robust server-side functionality and dynamic user interfaces, it provides a seamless experience for learners. ",
+    title: "Btissam's Blog  ",
+    img: "/blog.png",
+    desc: "This MERN stack application is tailored for sharing IT blogs and news, providing users with an intuitive platform to engage with the latest in the IT world. Utilizing React.js for the frontend and Node.js with Express.js for the backend, Mongodb for t database, MongoDB Atlas is employed as the cloud platform for managing the database, ensuring reliability and scalability. User authentication is seamlessly managed through standard authentication and Google OAuth via Firebase. Git tracks changes for version control, while Render serves as the SaaS platform for efficient deployment, ensuring optimal performance.",
+    links:['https://github.com/btissam19/mern-blog','https://btissamsblog.onrender.com/']
   },
 ];
 
@@ -61,8 +60,8 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <div className="buttonContainer">
-            <button>See Demo</button>
-            <button>See code</button>
+            <button><a href={item.links[0]} >See Demo</a ></button>
+            <button><a href={item.links[1]}>See code</a ></button>
             </div>
           </motion.div>
         </div>

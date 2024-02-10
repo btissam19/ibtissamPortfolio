@@ -48,7 +48,8 @@ function Hero() {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>IBTISSAM ECH CHAIBI</motion.h2>
-          <motion.h1 variants={textVariants}>Software Engineer</motion.h1>
+          <motion.h1 variants={textVariants}>Software Engineer </motion.h1>
+          <motion.h3 variants={textVariants}> Cloud & DevOps Enthusiast</motion.h3>
           <motion.div variants={textVariants} className="buttons">
             <motion.button whileHover={{ scale: 1.1 }} onClick={() => window.location.href = '#Skills'}>
               Discover More

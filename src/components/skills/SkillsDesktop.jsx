@@ -28,26 +28,26 @@ const Skills = () => {
     {
         id: 1,
         category: "Frontend",
-        skill: ["CSS", "Bootstrap", "Tailwind CSS", " Framer Motion ", "JavaScript", "React"],
-        images:['/css.jpg','/botstrape.jpg','/tailwind.jpg','/framer.png','/javascript.png','/react.png']
+        skill: ["CSS", "Bootstrap", "Tailwind CSS", "JavaScript", "React"],
+        images:['/css.jpg','/botstrape.jpg','/tailwind.jpg','/javascript.png','/react.png']
     },
     {
         id: 2,
         category: "Backend",
-        skill: ["Node.js", "Express.js", "Java", "Spring", "MongoDB", "MySQL"],
-        images:['/node.png','/express.png','/java.png','/spring.png','/mongodb.png','/mysql.png']
+        skill: ["Node.js", "Express.js","Python", "MongoDB", "MySQL"],
+        images:['/node.png','/express.png','/python.jpg','/mongodb.png','/mysql.png']
     },
     {
         id: 3,
-        category: "Tools",
-        skill: ["Git", "Docker", "Figma", "UML", "Postman", "VS Code"],
-        images:['/git.png','/docker.png','/figma.jpg','/uml.png','/postman.png','/vscode.jpg']
+        category: "Cloud & Devops",
+        skill: ["cloud","AWS", "git", "Docker", "Kubernetes"],
+        images:[ "/cloud.jpg",'/aws.png','/git.png','/docker.png',"/kebrnetes.png"]
     },
     {
         id: 4,
-        category: "Others",
-        skill: ["C","C++", "Python", "Sass", "TypeScript", "Linux"],
-        images:['/c.png','/cpp.png','/python.jpg','/sass.png','/typescript.png','/linux.jpg']
+        category: "Tools &language",
+        skill: ["C","C++","java","Linux", "UML"],
+        images:['/c.png','/cpp.png','/java.png','/linux.jpg','/uml.png']
     },
 ];
 
@@ -105,9 +105,6 @@ const Skills = () => {
              </li>
              <li>
              <img src={item.images[4]} alt={item.images[4]} />{item.skill[4]}
-             </li>
-             <li>
-             <img src={item.images[5]} alt={item.images[5]} />{item.skill[5]}
              </li>
            </motion.ul>
             

@@ -27,19 +27,18 @@ const Services = () => {
       id: 1,
       category: "Frontend",
       text:
-        "Build static websites with CSS frameworks like Bootstrap or Tailwind CSS, employing semantic HTML and customization for responsiveness. Add interactivity using JavaScript. Develop dynamic websites without a database with React. Integrate Framer Motion for animations in React, with fine-tuning options.",
+        "Build static websites with CSS frameworks like Bootstrap or Tailwind CSS, employing semantic HTML and customization for responsiveness. Add interactivity using JavaScript. Develop dynamic websites without a database with React.",
     },
     {
       id: 2,
       category: "Backend",
       text:
-        "Highly skilled in backend API development using Node.js, Express.js, and MongoDB or MySQL, with extensive expertise. Additionally, occasionally adept at crafting APIs using Java and Spring, demonstrating proficiency in diverse technologies for comprehensive backend solutions.",
+        "Highly skilled in backend API development using Node.js, Express.js, and MongoDB or MySQL, with extensive expertise. Additionally, occasionally adept at crafting APIs using python  demonstrating proficiency in diverse technologies for comprehensive backend solutions.",
     },
     {
       id: 3,
-      category: "Fullstack",
-      text:
-        "Proficient and expert in building full-stack web applications using the MERN stack, with advanced skills. Additionally, possess basic experience in developing full-stack apps with Java and React, ensuring a versatile approach to comprehensive web application solutions.",
+      category: "Cloud & Devops",
+      text:"Experienced with cloud computing technologies, especially AWS as a cloud provider. Proficient in Git for version control, Docker for containerization, and Kubernetes for scalability .",
     },
   ];
 
@@ -69,7 +68,7 @@ const Services = () => {
         </div>
         <div className="title">
           <h1>
-          For Your<motion.b whileHover={{ color: "#ef8ba2"}}> website</motion.b>
+          For Your<motion.b whileHover={{ color: "#ef8ba2"}}> Business </motion.b>
            
           </h1>
           <button>WHAT WE DO?</button>
