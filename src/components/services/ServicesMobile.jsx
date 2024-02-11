@@ -29,7 +29,7 @@ const ServicesMobile = () => {
           <h1>Unique Idea</h1>
         </div>
         <div className="title">
-          <h1> For Your Websites.</h1>
+          <h1> For Your Business.</h1>
         </div>
       </div>
       <div className="container">

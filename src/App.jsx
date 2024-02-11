@@ -1,7 +1,7 @@
 import { useState , useEffect } from "react";
 import "./App.scss"
-import Navbar from "./components/navbar/Navbar"
-import Hero from "./components/hero/hero";
+import Navbar from "./components/navbar/Navbar";
+import Hero from "./components/hero/Hero"
 import Parallax from "./components/parallax/Parallax";
 import Skills from "./components/skills/SkillsDesktop";
 import SkillsMobile from "./components/skills/skillsMobile";

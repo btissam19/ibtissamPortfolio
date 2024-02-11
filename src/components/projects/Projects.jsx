@@ -36,7 +36,7 @@ const items = [
     title: "Btissam's Blog  ",
     img: "/blog.png",
     desc: "This MERN stack application is tailored for sharing IT blogs and news, providing users with an intuitive platform to engage with the latest in the IT world. Utilizing React.js for the frontend and Node.js with Express.js for the backend, Mongodb for t database, MongoDB Atlas is employed as the cloud platform for managing the database, ensuring reliability and scalability. User authentication is seamlessly managed through standard authentication and Google OAuth via Firebase. Git tracks changes for version control, while Render serves as the SaaS platform for efficient deployment, ensuring optimal performance.",
-    links:['https://github.com/btissam19/mern-blog','https://btissamsblog.onrender.com/']
+    links:['https://btissamsblog.onrender.com/','https://github.com/btissam19/mern-blog']
   },
 ];
 
